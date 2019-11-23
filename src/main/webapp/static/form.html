@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello, servlets!</h1>
+<br/>
+<form method="post" action="/my-app/cool-servlet">
+    <input name="phone">
+    <button type="submit">Send</button>
+</form>
+<br/>
+<form method="post" action="/my-app/file-servlet" enctype="multipart/form-data">
+    <input type="text" name="author-name">
+    <input type="file" name="file-name">
+    <button>Send</button>
+</form>
+</body>
+</html>
