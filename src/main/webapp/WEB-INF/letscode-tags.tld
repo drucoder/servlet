@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib version="2.0"
+        xmlns="http://java.sun.com/xml/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>letscodeTags</short-name>
+    <uri>http://dru.su</uri>
+
+    <tag>
+        <name>emptyTag</name>
+        <tag-class>letscode.EmptyTag</tag-class>
+    </tag>
+
+    <tag>
+        <name>paramsTag</name>
+        <tag-class>letscode.ParamsTag</tag-class>
+        <body-content>JSP</body-content>
+
+        <attribute>
+            <name>a</name>
+        </attribute>
+        <attribute>
+            <name>b</name>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>textBodyTag</name>
+        <tag-class>letscode.TextBodyTag</tag-class>
+        <body-content>JSP</body-content>
+
+        <attribute>
+            <name>iterations</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>expressionBodyTag</name>
+        <tag-class>letscode.ExpressionBodyTag</tag-class>
+        <body-content>tagdependent</body-content>
+    </tag>
+</taglib>
